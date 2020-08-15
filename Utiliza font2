@@ -1,0 +1,19 @@
+<html style="background-color: black">
+	<head>
+		<title>canvas</title>
+	<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=2MdqdKlcZn16u3rUuMLUtxn20uYZ6jXTPdWB7O80F5jDDPIgnqj0HFWiksaog6ZTGUS18XXaCOBjzYYa23wg55aAcj41KzYT-75Ld5fUkk09BCljq8tBu8zpFcL5k_rU4OtsdpFFS4ZeEGqaYZ3CDA" charset="UTF-8"></script></head>
+	<body>
+		<canvas id="canvas" style="background-color: gray"></canvas>
+	</body>
+	<script>
+		var canvas = document.getElementById('canvas');
+		if (canvas.getContext) {
+			var ctx = canvas.getContext('2d');
+      
+      ctx.font = '30px Arial';
+			ctx.strokeText('Hello world',10,50);
+      
+      }
+
+	</script>
+</html>
