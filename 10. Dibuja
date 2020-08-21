@@ -1,0 +1,80 @@
+<html style="background-color: black">
+	<head>
+		<title>canvas</title>
+		<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=2MdqdKlcZn16u3rUuMLUtxn20uYZ6jXTPdWB7O80F5jDDPIgnqj0HFWiksaog6ZTGUS18XXaCOBjzYYa23wg55aAcj41KzYT-75Ld5fUkk09BCljq8tBu8zpFcL5k_rU4OtsdpFFS4ZeEGqaYZ3CDA" charset="UTF-8">
+	
+		</script>
+
+	</head>
+
+
+	<body>
+		<canvas id="canvas" width="500" height="500" style="background-color: white"></canvas>
+
+		<!--<img id="pillar" src="E:\Descargas\pillarmen.jpg" alt="PillarMen">-->
+
+	</body>
+	<script>
+		var canvas = document.getElementById('canvas');
+		if (canvas.getContext) {
+			var ctx = canvas.getContext('2d');
+			
+			
+			var canvas = document.getElementById('canvas');
+			var color = 'red';
+			var isPressed = false;
+			if (canvas.getContext) {
+				var ctx = canvas.getContext('2d');
+
+			ctx.fillStyle = 'blue';
+			ctx.fillRect(0,0,300,150);
+			ctx.fillStyle = 'green';
+			ctx.fillRect(0,75,300,75);
+			ctx.fillStyle = 'brown';
+			ctx.fillRect(50,50,20,50);
+			ctx.fillStyle = 'lime';
+    		ctx.beginPath();
+			ctx.arc(60,50,25,0,2*Math.PI);
+			ctx.fill();
+			ctx.closePath();
+			ctx.fillStyle = 'lime';
+    		ctx.beginPath();
+			ctx.arc(60,20,25,0,2*Math.PI);
+			ctx.fill();
+			ctx.closePath();
+			ctx.fillStyle = color;
+    		ctx.beginPath();
+			ctx.arc(60,20,10,0,2*Math.PI);
+			ctx.fill();
+			ctx.closePath();
+			ctx.fillStyle = color;
+    		ctx.beginPath();
+			ctx.arc(60,50,10,0,2*Math.PI);
+			ctx.fill();
+			ctx.closePath();
+			ctx.fillStyle = '#FFE4C4';
+			ctx.fillRect(150,50,75,75);
+			ctx.fillStyle = 'brown';
+			ctx.beginPath();
+			ctx.moveTo(130,50);
+			ctx.lineTo(245,50);
+			ctx.lineTo(185,25);
+			ctx.lineTo(130,50);
+			ctx.fill();
+			ctx.closePath();
+			ctx.fillStyle = 'brown';
+			ctx.fillRect(180,75,30,50);
+			ctx.fillStyle = 'gold';
+			ctx.beginPath();
+			ctx.arc(202,100,5,0,2*Math.PI);
+			ctx.fill();
+			ctx.closePath();
+			ctx.fillStyle = 'CornflowerBlue';
+			ctx.fillRect(152,75,25,25);
+
+		}
+	}
+
+	</script>
+	
+</html>
