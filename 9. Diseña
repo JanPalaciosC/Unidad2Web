@@ -1,0 +1,94 @@
+<html style="background-color: black">
+	<head>
+		<title>canvas</title>
+		<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=2MdqdKlcZn16u3rUuMLUtxn20uYZ6jXTPdWB7O80F5jDDPIgnqj0HFWiksaog6ZTGUS18XXaCOBjzYYa23wg55aAcj41KzYT-75Ld5fUkk09BCljq8tBu8zpFcL5k_rU4OtsdpFFS4ZeEGqaYZ3CDA" charset="UTF-8">
+	
+		</script>
+
+	</head>
+
+
+	<body>
+		<canvas id="canvas" width="500" height="500" style="background-color: white"></canvas>
+
+		<!--<img id="pillar" src="E:\Descargas\pillarmen.jpg" alt="PillarMen">-->
+
+	</body>
+	<script>
+		var canvas = document.getElementById('canvas');
+		if (canvas.getContext) {
+			var ctx = canvas.getContext('2d');
+			
+			
+			var canvas = document.getElementById('canvas');
+			var color = 'red';
+			var isPressed = false;
+			if (canvas.getContext) {
+				var ctx = canvas.getContext('2d');
+
+				/*pelo */
+				ctx.fillStyle = 'brown';
+				ctx.beginPath();
+				ctx.arc(200, 50, 50, 0, 2 * Math.PI);
+				ctx.fill();
+				/*Cabeza*/
+				ctx.fillStyle = 'pink';
+				ctx.beginPath();
+				ctx.arc(200, 50, 40, 0, 2 * Math.PI);
+				ctx.fill();
+
+				/* Rostro */
+				ctx.arc(205,70,15,0,Math.PI);   // Boca (contra reloj)
+				
+				ctx.arc(180,45,5,0,Math.PI*2);  // Ojo izquierdo
+			
+				ctx.arc(220,45,5,0,Math.PI*2);  // Ojo derecho
+				ctx.stroke();
+
+				/*Cuello*/
+				ctx.fillStyle = 'pink';
+				ctx.fillRect(190,88,20,30);
+
+				/* Torso */
+				ctx.fillStyle = 'gray';
+				ctx.fillRect(160,120,80,120);
+
+				/* Piernas */
+				ctx.fillStyle = 'blue';
+				ctx.fillRect(160,220,80,20);
+				ctx.fillRect(160,220,35,70);
+				ctx.fillRect(205,220,35,70);
+
+				/* pies */
+				ctx.fillStyle = 'black';
+				ctx.fillRect(140,280,55,20);
+				ctx.fillRect(205,280,55,20);
+
+				/* brazos */
+				
+				ctx.rotate(0.5);
+				ctx.beginPath();
+				ctx.rect(260, -5, 80, 20);
+				ctx.fillStyle = 'gray';
+				ctx.fill();
+				//ctx.lineWidth = 5;
+				ctx.strokeStyle = "black";
+				ctx.stroke();
+
+				ctx.rotate(-0.5);
+				ctx.beginPath();
+				ctx.rect(90, 120, 80, 20);
+				ctx.fillStyle = 'gray';
+				ctx.fill();
+				//ctx.lineWidth = 5;
+				ctx.strokeStyle = "black";
+				ctx.stroke();
+        
+        	
+
+		}
+	}
+
+	</script>
+	
+</html>
